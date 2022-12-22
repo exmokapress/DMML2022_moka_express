@@ -15,14 +15,14 @@ To train the classifier we are given 4800 labelled texts which are well balanced
 While using the tfidf vectorizer and standord classifiers like logistic regression, knn, decision tree, random forest, I was able to get the accuracy to some 40%. Tuning the configs and hyperparameters did improve the result, combination of simple classifers through a soft or a hard voting also helped, though it was clear to me that a break through would require something new. 
 
 See notebook 
-[here](https://github.com/exmokapress/DMML2022_moka_express/blob/main/code/fr_difficulty_detection_tfidf_vectorizer.ipynb))
+[here](https://github.com/exmokapress/DMML2022_moka_express/blob/main/code/fr_difficulty_detection_tfidf_vectorizer.ipynb)
 
 ## Word embedding
 
 To try out something new, I first started exploring the word embedding. Using NLP sentence vectorizer each text was vectorized to a 300 dimentional vector. This process was surprisingly fast and the result out of it was an accuracy close to 50%. Randomly tuning the SVC classifer based on some desktop research made the accuracy above 50%. 
 
 See notebook 
-[here]([myLib/README.md](https://github.com/exmokapress/DMML2022_moka_express/blob/main/code/fr_difficulty_detection_word_embedding.ipynb))
+[here](https://github.com/exmokapress/DMML2022_moka_express/blob/main/code/fr_difficulty_detection_word_embedding.ipynb)
 
 
 ## Pre trained hugging face models
@@ -30,8 +30,8 @@ See notebook
 To make the accuracy to 60% and further advance in the leader board, again it would require a new strategy. I challenged myself to fine tune the pre trained models on hugging face. Following the blog of fine tuning a bert model, I managed to get the first fine tuning work. Unfortunately the result was not that promising, accuracy even below 50%. Out of the dispointment I started looking for other pre trained models specific for the French language and tried out cased vs uncased models. My last approach on hugging face models was to fine tune the camembert model by following a tutorial in the internet. 
 
 See notebook 
-[here]([myLib/README.md](https://github.com/exmokapress/DMML2022_moka_express/blob/main/code/fr_difficulty_detection_bert_models_hugging_face.ipynb))
-[here]([myLib/README.md](https://github.com/exmokapress/DMML2022_moka_express/blob/main/code/fr_difficulty_detection_camembert_models_hugging_face.ipynb))
+[here](https://github.com/exmokapress/DMML2022_moka_express/blob/main/code/fr_difficulty_detection_bert_models_hugging_face.ipynb)
+[here](https://github.com/exmokapress/DMML2022_moka_express/blob/main/code/fr_difficulty_detection_camembert_models_hugging_face.ipynb)
 
 ## Result summary
 
@@ -44,5 +44,6 @@ See notebook
 ## Other material
 
 See the presentation 
+[here](https://github.com/exmokapress/DMML2022_moka_express/blob/main/documentation/French%20language%20difficulty%20detection%20-%20Moka%20Express.pdf)
 
 Watch the video
