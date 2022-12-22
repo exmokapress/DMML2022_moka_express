@@ -1,8 +1,6 @@
 # DMML2022_moka_express
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://user-images.githubusercontent.com/25423296/163456776-7f95b81a-f1ed-45f7-b7ab-8fa810d529fa.png">
-  <source media="(prefers-color-scheme: light)" srcset="https://user-images.githubusercontent.com/25423296/163456779-a8556205-d0a5-45e2-ac17-42d089e3c3f8.png">
-  <img alt="Shows an illustrated sun in light mode and a moon with stars in dark mode." src="https://user-images.githubusercontent.com/25423296/163456779-a8556205-d0a5-45e2-ac17-42d089e3c3f8.png">
 </picture>
 
 
@@ -23,11 +21,17 @@ See notebook
 
 To try out something new, I first started exploring the word embedding. Using NLP sentence vectorizer each text was vectorized to a 300 dimentional vector. This process was surprisingly fast and the result out of it was an accuracy close to 50%. Randomly tuning the SVC classifer based on some desktop research made the accuracy above 50%. 
 
+See notebook 
+[here]([myLib/README.md](https://github.com/exmokapress/DMML2022_moka_express/blob/main/code/fr_difficulty_detection_word_embedding.ipynb))
+
 
 ## Pre trained hugging face models
 
 To make the accuracy to 60% and further advance in the leader board, again it would require a new strategy. I challenged myself to fine tune the pre trained models on hugging face. Following the blog of fine tuning a bert model, I managed to get the first fine tuning work. Unfortunately the result was not that promising, accuracy even below 50%. Out of the dispointment I started looking for other pre trained models specific for the French language and tried out cased vs uncased models. My last approach on hugging face models was to fine tune the camembert model by following a tutorial in the internet. 
 
+See notebook 
+[here]([myLib/README.md](https://github.com/exmokapress/DMML2022_moka_express/blob/main/code/fr_difficulty_detection_bert_models_hugging_face.ipynb))
+[here]([myLib/README.md](https://github.com/exmokapress/DMML2022_moka_express/blob/main/code/fr_difficulty_detection_camembert_models_hugging_face.ipynb))
 
 ## Result summary
 
