@@ -57,4 +57,5 @@ Hugging face pre trained models
 See the presentation 
 [here](https://github.com/exmokapress/DMML2022_moka_express/blob/main/documentation/French%20language%20difficulty%20detection%20-%20Moka%20Express.pdf)
 
-Watch the video
+Watch the video 
+[here](https://youtu.be/6hZQ20Sduec)
