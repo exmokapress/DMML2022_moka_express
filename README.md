@@ -43,14 +43,14 @@ Tfidf vectorizer
 |    Accuracy|   45.56%                     |       43.75%              |      32.60%               |        42.71%             |
 
 Word embedding
-|            | Linear SVC, 80% data |  SVC, 80% data   |SVC tuned hp, 80% data   |SVC tuned hp, all data    |
+|            | Linear SVC, 80% data.        |  SVC, 80% data            |SVC tuned hp, 80% data     |SVC tuned hp, all data     |
 |-----:      |------------------------------|---------------------------|---------------------------|---------------------------|
-|    Accuracy|   48.44%                    |       48.54%              |      50.31%              |        51.17%             |
+|    Accuracy|   48.44%                     |       48.54%              |      50.31%               |        51.17%             |
 
 Hugging face pre trained models
-|            | flaubert, all data |  camembert-base, 80% data   |camembert-base, all data    |camembert-base, more data    |
+|            | flaubert, all data           |  camembert-base, 80% data |camembert-base, all data   |camembert-base, more data  |
 |-----:      |------------------------------|---------------------------|---------------------------|---------------------------|
-|    Accuracy|   54.75%                     |       56.67%            |      59.58%           |        60.67%             |
+|    Accuracy|   54.75%                     |       56.67%              |      59.58%               |        60.67%             |
 
 ## Other material
 
