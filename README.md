@@ -8,52 +8,34 @@
 
 ## About the project
 
-<!-- TO DO: add more details about me later -->
-
-In this project we are expected to create a classifier that predicts the level of a French text, e.g. A1, A2, B1, B2, C1, C2
+In this project we are expected to create a classifier that predicts the level of a French text, e.g. A1, A2, B1, B2, C1, C2.
 
 To train the classifier we are given 4800 labelled texts which are well balanced and have a base rate of 16.94%. To test the classifier we are asked to predict 1200 unlabelled texts, in form of a Kaggle competation. 
 
-While using the basic vectorizer and classifier I was able to get the accuracy to some 40%. Tuning the configs and hyperparameters did improve the result. Combination of simple classifers also helped, though it was clear to me that a break throug would require something new. 
+# Step 1
 
-Vectorizer: tfidf vectorizer using a standard spacy tokenizer and allowing some config tuning
-Classifier: tune some hyperparameters depending on the classifier
-Logistic regression
-KNN
-Decision tree
-Random forest
+While using the tfidf vectorizer and standord classifiers like logistic regression, knn, decision tree, random forest, I was able to get the accuracy to some 40%. Tuning the configs and hyperparameters did improve the result, combination of simple classifers through a soft or a hard voting also helped, though it was clear to me that a break through would require something new. 
 
-To try out something new, I first started exploring the word embedding. Using NLP sentence vectorizer each text was vectorized to a 300 dimentional vector. This process was surprisingly fast and the result out of it was an accuracy close to 50%. Randomly tuning the SVC classifer based on some desktop research the accuracy went above 50%. 
 
-Vectorizer: 
-Word embedding using nlp sentence vectorizer
-Each text is vectorized to a 300 dimensional vector
-Classifier: tune some hyperparameters depending on the classifier
-Linear SVC 
-SVC
+# Step 2
 
-To make it to 60% and advance in the leader board, again it would require a new strategy. I challenged myself to fine tune the pre trained models on hugging face. Following the blog of fine tuning a bert model, I managed to get the first fine tuning work. Unfortunately the result was not that promising. Out of the dispointment I started looking for other pre trained models specific for the French language. There I continued with other bert models, tried out cased and uncased. My last approach was to fine tune the camembert model by following a tutorial in the internet. 
+To try out something new, I first started exploring the word embedding. Using NLP sentence vectorizer each text was vectorized to a 300 dimentional vector. This process was surprisingly fast and the result out of it was an accuracy close to 50%. Randomly tuning the SVC classifer based on some desktop research made the accuracy above 50%. 
+
+
+# Step 3
+
+To make the accuracy to 60% and further advance in the leader board, again it would require a new strategy. I challenged myself to fine tune the pre trained models on hugging face. Following the blog of fine tuning a bert model, I managed to get the first fine tuning work. Unfortunately the result was not that promising, accuracy even below 50%. Out of the dispointment I started looking for other pre trained models specific for the French language and tried out cased vs uncased models. My last approach on hugging face models was to fine tune the camembert model by following a tutorial in the internet. 
 
 
 
 
-Hugging face pre trained models can make a difference!
-Challenges
-Make the fine tuning work
-Make the prediction work
-Try out different models
-Bert models
-FlauBert models
-Camembert models
-
-
-
-| Rank | THING-TO-RANK |
-|-----:|---------------|
-|     1|               |
-|     2|               |
-|     3|               |
+| Rank | THING-TO-RANK |  fdfa.        |
+|-----:|---------------|---------------
+|     1|               |               |
+|     2|               |               |
+|     3|               |               |
 
 
 See the presentation 
+
 Watch the video
