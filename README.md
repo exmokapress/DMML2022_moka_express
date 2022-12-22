@@ -15,7 +15,7 @@ To train the classifier we are given 4800 labelled texts which are well balanced
 While using the tfidf vectorizer and standord classifiers like logistic regression, knn, decision tree, random forest, I was able to get the accuracy to some 40%. Tuning the configs and hyperparameters did improve the result, combination of simple classifers through a soft or a hard voting also helped, though it was clear to me that a break through would require something new. 
 
 See notebook 
-[here]([myLib/README.md](https://github.com/exmokapress/DMML2022_moka_express/blob/main/code/fr_difficulty_detection_tfidf_vectorizer.ipynb))
+[here](https://github.com/exmokapress/DMML2022_moka_express/blob/main/code/fr_difficulty_detection_tfidf_vectorizer.ipynb))
 
 ## Word embedding
 
