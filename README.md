@@ -29,17 +29,19 @@ See notebook
 
 To make the accuracy to 60% and further advance in the leader board, again it would require a new strategy. I challenged myself to fine tune the pre trained models on hugging face. Following the blog of fine tuning a bert model, I managed to get the first fine tuning work. Unfortunately the result was not that promising, accuracy even below 50%. Out of the dispointment I started looking for other pre trained models specific for the French language and tried out cased vs uncased models. My last approach on hugging face models was to fine tune the camembert model by following a tutorial in the internet. 
 
-See notebook 
+See notebook bert models 
 [here](https://github.com/exmokapress/DMML2022_moka_express/blob/main/code/fr_difficulty_detection_bert_models_hugging_face.ipynb)
+See notebook camembert models 
 [here](https://github.com/exmokapress/DMML2022_moka_express/blob/main/code/fr_difficulty_detection_camembert_models_hugging_face.ipynb)
 
 ## Result summary
 
-|            | Logreg best config, 80% data |  KNN tuned hp, 80% data   |
-|-----:      |------------------------------|---------------------------|
-|    Accuracy|   45.56%                     |       43.75%              |
-|     2.     |                              |                           |
-|     3.     |                              |                           |
+Tfidf vectorizer 
+|            | Logreg best config, 80% data |  KNN tuned hp, 80% data   |Decision tree, 80% data     |Random forest, 80% data   |
+|-----:      |------------------------------|---------------------------|---------------------------|---------------------------|
+|    Accuracy|   45.56%                     |       43.75%              |      32.60%               |        42.71%             |
+
+
 
 ## Other material
 
