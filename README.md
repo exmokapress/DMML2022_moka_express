@@ -31,17 +31,26 @@ To make the accuracy to 60% and further advance in the leader board, again it wo
 
 See notebook bert models 
 [here](https://github.com/exmokapress/DMML2022_moka_express/blob/main/code/fr_difficulty_detection_bert_models_hugging_face.ipynb)
+
 See notebook camembert models 
 [here](https://github.com/exmokapress/DMML2022_moka_express/blob/main/code/fr_difficulty_detection_camembert_models_hugging_face.ipynb)
 
 ## Result summary
 
 Tfidf vectorizer 
-|            | Logreg best config, 80% data |  KNN tuned hp, 80% data   |Decision tree, 80% data     |Random forest, 80% data   |
+|            | Logreg best config, 80% data |  KNN tuned hp, 80% data   |Decision tree, 80% data    |Random forest, 80% data    |
 |-----:      |------------------------------|---------------------------|---------------------------|---------------------------|
 |    Accuracy|   45.56%                     |       43.75%              |      32.60%               |        42.71%             |
 
+Word embedding
+|            | Linear SVC, 80% data |  SVC, 80% data   |SVC tuned hp, 80% data   |SVC tuned hp, all data    |
+|-----:      |------------------------------|---------------------------|---------------------------|---------------------------|
+|    Accuracy|   48.44%                    |       48.54%              |      50.31%              |        51.17%             |
 
+Hugging face pre trained models
+|            | flaubert, all data |  camembert-base, 80% data   |camembert-base, all data    |camembert-base, more data    |
+|-----:      |------------------------------|---------------------------|---------------------------|---------------------------|
+|    Accuracy|   54.75%                     |       56.67%            |      59.58%           |        60.67%             |
 
 ## Other material
 
